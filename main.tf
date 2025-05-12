@@ -19,12 +19,14 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "sp-tofu-s3"
-  force_destroy = true
+#resource "aws_s3_bucket" "example" {
+#  bucket = "sp-tofu-s3"
+#  force_destroy = true
+#
+#  tags = {
+#    Name        = "ExampleBucket"
+#    Environment = "Dev"
+#  }
+#}
 
-  tags = {
-    Name        = "ExampleBucket"
-    Environment = "Dev"
-  }
-}
+
