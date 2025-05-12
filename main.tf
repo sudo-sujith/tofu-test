@@ -31,7 +31,7 @@ resource "aws_s3_bucket" "example" {
 
 resource "aws_organizations_account" "new_account" {
   name      = "tofu-test"
-  email     = "test@example.com"
+  email     = "test@tofu.com"
   role_name = "OrganizationAccountAccessRole"
   parent_id = "r-p5cy" # Replace with your OU ID
 }
