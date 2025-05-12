@@ -20,7 +20,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "sp-tofu-bucket"
+  bucket = "sp-tofu-s3"
   force_destroy = true
 
   tags = {
