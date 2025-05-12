@@ -28,3 +28,11 @@ resource "aws_s3_bucket" "example" {
     Environment = "Dev"
   }
 }
+
+resource "aws_organizations_account" "new_account" {
+  name      = "tofu-test"
+  email     = "test@example.com"
+  role_name = "OrganizationAccountAccessRole"
+  parent_id = "r-p5cy" # Replace with your OU ID
+}
+
